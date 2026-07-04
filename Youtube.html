@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></link>
+
+    <style>
+        .a{
+            position: fixed;
+            background-color: white;
+            height: 50px;
+            width: 1525px;
+            z-index: 2;
+            top: 0px;
+        }
+        .a1{
+            height: 60px;
+            width: 60px;
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+        
+        .a2{
+            height: 60px;
+            width: 60px;
+            margin-top: -60px;
+            margin-left: 50px;
+            /* background-color: black; */
+        }
+        .a3{
+            height: 40px;
+            width: 80px;
+            margin-top: -65px;
+            margin-left: 79px;
+            font-weight: bold;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: x-large;
+            /* background-image: url("doodle.png");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat; */
+        }
+        .a4{
+            height: 25px;
+            width: 570px;
+            margin-top: -35px;
+            margin-left: 450px;
+            /* background-color: black; */
+            border: 1px solid gray;
+            border-radius: 20px;
+            color: gray;
+            padding-left: 20px;
+            padding-top: 5px;
+            padding-bottom: 2px;
+        }
+        .a41{
+            height: 20px;
+            width: 30px;
+            background-color: rgb(233, 229, 229);
+            border-left: 1px solid gray;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            margin-top: -22px;
+            margin-left: 525px;        
+            border-top-right-radius:10px;
+            border-bottom-right-radius:10px;
+
+        }
+        .b{
+            position: fixed;
+            /* background-color: red; */
+            height: 800px;
+            width: 250px;
+            top: 50px;
+        }
+        .c{
+            position: fixed;
+            background-color: white;
+            height: 30px;
+            width: 1250px;
+            margin-top: 40px;
+            margin-left: 300px;
+            padding: 10px;
+            /* display: flex; */
+
+        }
+        .vi{
+            display: flex;
+            z-index: 1;
+        }
+        .d{
+            height: 260px;
+            width: 360px;
+            /* background-color: blue; */
+            margin-left: 305px;
+            margin-top: 100px;
+            padding: 10px;
+        }
+        .d1{
+            height: 200px;
+            width: 360px;
+            /* background-color: cornflowerblue; */
+            border-radius: 10px;
+            background-image: url("google.png");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            
+        }
+        .d2{
+            height: 50px;
+            width: 360px;
+            /* background-color: lightblue; */
+            margin-top: 10px;
+            border-radius: 10px;
+
+            
+        }
+        .d21{
+            height: 30px;
+            width: 30px;
+            border-radius: 15px;
+            /* background-color: blueviolet; */
+            background-image: url("ggl.jpg");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+        }
+        .d22{
+            height: 10px;
+            width: 330px;
+            /* background-color: coral; */
+            margin-left: 37px;
+            margin-top: -30px;
+        }
+        .d23{
+            height: 10px;
+            width: 300px;
+            /* background-color: coral; */
+            margin-left: 37px;
+            margin-top: 5px;
+
+        }
+        .d24{
+            height: 10px;
+            width: 300px;
+            /* background-color: coral; */
+            margin-left: 37px;
+            margin-top: 5px;
+            /* color: rgb(108, 105, 105); */
+        }
+        .gc{
+            color: rgb(108, 105, 105);
+            margin-left: 80px;
+            margin-top: -18px;
+            
+        }
+
+        .e{
+            height: 260px;
+            width: 360px;
+            /* background-color: blue; */
+            margin-left: 30px;
+            margin-top: 100px;
+            padding: 10px;
+            
+
+        }
+        .e1{
+            height: 200px;
+            width: 360px;
+            /* background-color: cornflowerblue; */
+            border-radius: 10px;
+            background-image: url("tmkoc.jpg");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+        }
+        .e2{
+            height: 50px;
+            width: 360px;
+            /* background-color: lightblue; */
+            margin-top: 10px;
+            border-radius: 10px;
+
+        }
+        .e21{
+            height: 30px;
+            width: 30px;
+            border-radius: 15px;
+            /* background-color: blueviolet; */
+            background-image: url("tmkoc1.jpg");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+        }
+        .e22{
+            height: 10px;
+            width: 330px;
+            /* background-color: coral; */
+            margin-left: 37px;
+            margin-top: -30px;
+        }
+        .e23{
+            height: 10px;
+            width: 300px;
+            /* background-color: coral; */
+            margin-left: 37px;
+            margin-top: 5px;
+
+        }
+        .e24{
+            height: 10px;
+            width: 300px;
+            /* background-color: coral; */
+            margin-left: 37px;
+            margin-top: 5px;
+            color: rgb(108, 105, 105);
+
+
+        }
+        .f{
+            height: 260px;
+            width: 360px;
+            /* background-color: blue; */
+            margin-left: 30px;
+            margin-top: 100px;
+            padding: 10px;
+
+
+        }
+        .f1{
+            height: 200px;
+            width: 360px;
+            /* background-color: cornflowerblue; */
+            border-radius: 10px;
+            background-image: url("tnl.jpg");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .f2{
+            height: 50px;
+            width: 360px;
+            /* background-color: lightblue; */
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+        .f21{
+            height: 30px;
+            width: 30px;
+            border-radius: 15px;
+            /* background-color: blueviolet; */
+            background-image: url("TI.jpg");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+        }
+        .f22{
+            height: 10px;
+            width: 300px;
+            /* background-color: coral; */
+            margin-left: 40px;
+            margin-top: -30px;
+        }
+        .f23{
+            height: 10px;
+            width: 300px;
+            /* background-color: coral; */
+            margin-left: 330px;
+            margin-top: 5px;
+
+        }
+        .f24{
+            height: 10px;
+            width: 300px;
+            /* background-color: coral; */
+            margin-left: 40px;
+            margin-top: 5px;
+            color: rgb(108, 105, 105);
+
+
+        }
+        .g{
+            /* position: relative; */
+            height: 40px;
+            width: 1230px;
+            /* background-color: chartreuse; */
+            margin-left: 305px;
+            margin-top: 20px;
+            padding-top: 20px;
+        }
+        .g1{
+            height: 30px;
+            width: 30px;
+            background-image: url("yt.webp");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-left: 10px;
+        
+        }
+        .g2{
+            height: 40px;
+            width: 100px;
+            /* background-color: white; */
+            margin-left: 60px;
+            margin-top: -25px;
+            font-size: large;
+            font-weight: bold;
+
+        }
+        .g3{
+            height: 30px;
+            width: 30px;
+            /* background-color:palegoldenrod; */
+            margin-left: 1170px;
+            margin-top: -50px;
+            z-index: 5;
+            padding: 5px;
+        }
+        .sh{
+            display: flex;
+        }
+        .h{
+            position: absolute;
+            height: 350px;
+            width: 230px;
+            /* background-color: palevioletred; */
+            background-image: url("s1.png");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-left: 305px;
+            margin-top: 70px;
+        }
+        .i1{
+            position: absolute;
+            height: 350px;
+            width: 230px;
+            /* background-color: pink; */
+            background-image: url("s5.png");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-left: 1040px;
+            margin-top: 70px;
+
+        }
+        .j{
+            position: absolute;
+            height: 350px;
+            width: 230px;
+            background-image: url("s4.png");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            /* background-color: powderblue; */
+            margin-left: 1280px;
+            margin-top: 70px;
+
+        }
+        .k{
+            position: absolute;
+            height: 350px;
+            width: 230px;
+            background-image: url("s3.png");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            /* background-color: cadetblue; */
+            margin-left: 795px;
+            margin-top: 70px;
+
+        }
+        .l{
+            position: absolute;
+            height: 350px;
+            width: 230px;
+            background-image: url("s2.png");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            /* background-color: skyblue; */
+            margin-left: 550px;
+            margin-top: 70px;
+
+        }
+        .nav{
+            display: flex;
+        }
+        .m1{
+            height: 20px;
+            /* width: 50px; */
+            background-color: rgb(28, 28, 28);
+            color: white;
+            display: inline-block;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .m{
+            height: 20px;
+            /* width: 120px; */
+            background-color: rgb(233, 233, 233);
+            margin: 5px;
+            display: inline-block;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .b1{
+            height: 20px;
+            width: 190px;
+            background-color: gainsboro;
+            margin-top: 10px;
+            margin-left: 10px;
+            color: black;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .b11{
+            height: 20px;
+            width: 20px;
+            /* background-color: aqua; */
+            margin-top: -20px;
+            margin-left: 50px;
+            color: black;
+            font-size: large;
+        }
+        .b22{
+            height: 20px;
+            width: 20px;
+            /* background-color: aqua; */
+            margin-top: -25px;
+            margin-left: 65px;
+            color: black;
+            font-size: large;
+        }
+        .b33{
+            height: 20px;
+            width: 20px;
+            /* background-color: aqua; */
+            margin-top: 15px;
+            margin-left: 15px;
+            color: black;
+            font-size: large;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+        .b31{
+            height: 30px;
+            width: 30px;
+            border-radius: 25px;
+            /* background-color: crimson; */
+            background-image: url("SK.jpg");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 15px;
+        }
+        .b312{
+            height: 30px;
+            width: 30px;
+            border-radius: 25px;
+            /* background-color: crimson; */
+            background-image: url("Ss.jpg");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 15px;
+        }
+        .b313{
+            height: 30px;
+            width: 30px;
+            border-radius: 25px;
+            /* background-color: crimson; */
+            background-image: url("RS.jpg");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 15px;
+        }
+        .b314{
+            height: 30px;
+            width: 30px;
+            border-radius: 25px;
+            /* background-color: crimson; */
+            background-image: url("CA.jpg");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 15px;
+        }
+        .b315{
+            height: 30px;
+            width: 30px;
+            border-radius: 25px;
+            /* background-color: crimson; */
+            background-image: url("SKh.jpg");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 15px;
+        }
+        .b316{
+            height: 30px;
+            width: 30px;
+            border-radius: 25px;
+            /* background-color: crimson; */
+            background-image: url("TI.jpg");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 15px;
+        }
+        .b32{
+            height: 20px;
+            width: 150px;
+            /* background-color: aqua; */
+            margin-top: -40px;
+            margin-left: 65px;
+            color: black;
+            font-size: large;
+        }
+        .b321{
+            height: 20px;
+            width: 150px;
+            /* background-color: aqua; */
+            margin-top: -38px;
+            margin-left: 65px;
+            color: black;
+            font-size: large;
+        }
+        .b322{
+            height: 20px;
+            width: 150px;
+            /* background-color: aqua; */
+            margin-top: -30px;
+            margin-left: 65px;
+            color: black;
+            font-size: large;
+        }
+        .b34{
+            height: 20px;
+            width: 150px;
+            /* background-color: aqua; */
+            margin-top: 20px;
+            margin-left: 65px;
+            color: black;
+            font-size: large;
+        }
+        .b21{
+            height: 32px;
+            width: 32px;
+            background-image: url("yts.png");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            /* background-color: antiquewhite; */
+            margin-top: 10px;
+            margin-left: 15px;
+        }
+        hr{
+            width: 260px;
+            color: gainsboro;
+            size: 1px;
+            margin-top: 20px;
+            margin-left: -10px;
+        }
+        .arr{
+            height: 15px;
+            width: 15px;
+            background-image: url("rarrow.png");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-left: 100px;
+            margin-top: -18px;
+            /* line-height: 5px; */
+        }
+        .arr1{
+            height: 15px;
+            width: 15px;
+            background-image: url("rarrow.png");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-left: 35px;
+            margin-top: -18px;
+            /* line-height: 5px; */
+        }
+        .ar{
+            height: 20px;
+            width: 15px;
+            background-image: url("arrow.png");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-left: 20px;
+            margin-top: -20px;
+        }
+        .b41{
+            height: 25px;
+            width: 25px;
+            /* background-color: crimson; */
+            background-image: url("yc.png");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 17px;
+        }
+        .b42{
+            height: 30px;
+            width: 30px;
+            margin-left: 15px;
+            margin-top: 23px;
+        }
+        .b43{
+            height: 30px;
+            width: 30px;
+            /* border-radius: 25px; */
+            /* background-color: crimson; */
+            background-image: url("Pl.png");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 15px;
+        }
+        .b44{
+            height: 30px;
+            width: 30px;
+            border-radius: 25px;
+            /* background-color: crimson; */
+            margin-left: 15px;
+            margin-top: 20px;
+        }
+        .b45{
+            height: 30px;
+            width: 30px;
+            /* border-radius: 25px; */
+            /* background-color: crimson; */
+            background-image: url("like.png");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 15px;
+        }
+        .w{
+            height: 20px;
+            width: 150px;
+            border-radius: 25px;
+            background-color: rgb(162, 162, 162);
+            color: black;
+            text-align: center;
+            margin-top: 15px;
+            padding-top: 5px;
+
+        }
+        .s{
+            height: 20px;
+            width: 150px;
+            border-radius: 15px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin-left: 160px;
+            padding-top: 5px;
+            margin-top: -25px;
+        }
+        .mi{
+            height: 30px;
+            width: 30px;
+            background-color: rgb(236, 233, 233);
+            border-radius: 15px;
+            margin-top: -30px;
+            margin-left: 590px;
+            background-image: url("mi.png");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .cr{
+            height: 10px;
+            width: 80px;
+            background-color: rgb(230, 228, 228);
+            border-radius: 20px;
+            padding-top: 7px;
+            padding-bottom: 15px;
+            text-align: center;
+            color: black;
+            margin-left: 850px;
+            margin-top: -33px;
+        }
+        .A{
+            height: 30px;
+            width: 30px;
+            background-color: cornflowerblue;
+            border-radius: 15px;
+            margin-top: -30px;
+            margin-left: 990px;
+            font-size: x-large;
+            /* padding-left: 5px; */
+            text-align: center;
+            color: white;
+        }
+        .n{
+            height: 30px;
+            width: 30px;
+            background-color: rgb(236, 233, 233);
+            border-radius: 15px;
+            margin-top: -30px;
+            margin-left: 950px;
+            background-image: url("n.png");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <div class="a">
+        <div class="a1"><i class="fa-solid fa-bars " style="color: rgb(40, 39, 39);"></i></div>
+        <div class="a2"><i class="fa-brands fa-youtube fa-xl" style="color: rgb(255, 0, 0);"></i></div>
+        <div class="a3">YouTube</div>
+        <div class="a4">Search
+        <div class="a41"><i class="fa-solid fa-magnifying-glass fa-l" style="color: rgb(12, 12, 12);"></i></div>
+        <div class="mi"></div>
+        <div class="cr">+ Create</div>
+        <div class="A">A</div>
+        <div class="n"></div>
+
+        
+        </div>
+
+    </div>
+    <div class="b">
+        <div class="b1"><i class="fa-solid fa-house fa-xl" style="color: rgb(45, 44, 44);"></i><div class="b11">Home</div></div>
+        <div class="b2"><div class="b21"></div><div class="b22">Shorts</div></div>
+        <hr>
+        <div class="b33">Subscription<div class="arr"></div></div>
+        <div class="b3">
+            <div class="b31"></div>
+            <div class="b32">Apna College</div>
+
+        </div>
+        
+        <div class="b3">
+            <div class="b312"></div>
+            <div class="b32">The Shukla Sisters</div>
+
+        </div>
+        <div class="b3">
+            <div class="b313"></div>
+            <div class="b32">Raj Shamani Clips</div>
+
+        </div>
+        <div class="b3">
+            <div class="b314"></div>
+            <div class="b32">Crafter Aditi</div>
+
+        </div>
+        <div class="b3">
+            <div class="b315"></div>
+            <div class="b32">Shehzaan Khan</div>
+
+        </div>
+        <div class="b3">
+            <div class="b316"></div>
+            <div class="b32">Triggered Insaan</div>
+
+        </div>
+        <div class="b34">Show more</div>
+        <div class="ar"></div>
+        <hr>
+        <div class="b33">You<div class="arr1"></div></div>
+        <div class="b3">
+            <div class="b41"></div>
+            <div class="b321">Your channel</div>
+
+        </div>
+        
+        <div class="b3">
+            <div class="b42"><i class="fa-solid fa-clock-rotate-left fa-xl" style="color: rgb(18, 17, 17);"></i></div>
+            <div class="b321">History</div>
+
+        </div>
+        <div class="b3">
+            <div class="b43"></div>
+            <div class="b321">Playlists</div>
+
+        </div>
+        <div class="b3">
+            <div class="b44"><i class="fa-regular fa-clock fa-xl" style="color: rgb(18, 17, 17);"></i></div>
+            <div class="b322">Watch Later</div>
+
+        </div>
+        <div class="b3">
+            <div class="b45"></div>
+            <div class="b321">Liked Videos</div>
+            <!-- Popatlal ko Khata Dekh Jethalal ke Muh Me Aya Pani | FULL MOVIE | Taarak Mehta Ka Ooltah Chashmah -->
+
+
+        </div>
+
+
+    </div>
+    <div class="c">
+         <div class="m1">All</div>
+        <div class="m">Podcasts</div>
+        <div class="m">Comedy</div>
+        <div class="m">Craft</div>
+        <div class="m">Music</div>
+        <div class="m">News</div>
+        <div class="m">Mixes</div>
+        <div class="m">Colleges</div>
+        <div class="m">Computer Programming</div>
+        <div class="m">Self Confidence</div>
+        <div class="m">Live</div>
+        <div class="m">Study Skills</div>
+        <div class="m">Statistics</div>
+        <div class="m">Watched</div>
+        <div class="m">New to You</div>
+    </div>
+    <div class="vi">
+        <div class="d">
+            <div class="d1"></div>
+            <div class="d2">
+                <div class="d21"></div>
+                <div class="d22">Start your proof of concept for $300 in free</div>
+                <div class="d23">credit</div>
+                <div class="d24">Sponsered• <div class="gc">Google Cloud</div></div>
+                <div class="w">Watch</div>
+                <div class="s">Sign Up</div>
+
+            </div>
+
+
+        </div>
+        <div class="e">
+            <div class="e1"></div>
+            <div class="e2">
+                <div class="e21"></div>
+                <div class="e22">Jethalal ne liye garam garam jalebi fafda ke maje!|</div>
+                <div class="e23">TMKOC Movies |Tarak Mehta ka Oolt... </div>
+                <div class="e24">Taarak Mehta Ka Ooltah Chashma Movies</div>
+            </div>
+        </div>
+        <div class="f">
+            <div class="f1"></div>
+            <div class="f2">
+                <div class="f21"></div>
+                <div class="f22">Try Not to laugh Challenge vs Abhishek vs Ruchika</div>
+                <div class="f23"><i class="fa-solid fa-ellipsis fa-l" style="color: rgb(18, 17, 17);"></i></div>
+                <div class="f24">Triggered Insaan    35k 2days ago</div>
+
+            </div>
+        </div>
+    </div>
+    <div class="sh">
+        <div class="g">
+            <div class="g1"></div>
+            <div class="g2">Shorts</div>
+            <div class="g3"><i class="fa-solid fa-ellipsis fa-l" style="color: rgb(18, 17, 17);"></i></div>
+
+
+        </div>
+        <div class="h"></div>
+        <div class="i1"></div>
+        <div class="j"></div>
+        <div class="k"></div>
+        <div class="l"></div>
+    </div>
+    <div class="nav">
+       
+
+
+
+
+    </div>
+
+
+</body>
+</html>
